@@ -12,8 +12,8 @@ if(text1 !== "" && text2 !== ""){
 
 //2
 
-const num1 = prompt("Введіть число");
-const num2 = prompt("Введіть число");
+const num1 = Number(prompt("Введіть число"));
+const num2 = Number(prompt("Введіть число"));
 const result = num1 + num2;
 
 if (result > 10) {
@@ -27,7 +27,7 @@ if (result > 10) {
 
 const textJava = prompt("Введіть текст");
 
-if (textJava === "JavaScript"){
+if (textJava.includes("JavaScript")){
     alert("Текст містить слово JavaScript");
 } else {
     alert("Текст не містить слово JavaScript");
@@ -53,7 +53,7 @@ let number = prompt("Введіть свій номер телефону");
 let email = prompt("Введіть свою електронну адресу");
 let password = prompt("Введіть свій пароль");
 
-if (number.length >= 3 && email && password) {
+if (number.length >= 3 && email.includes("@") && emaill.indexOf(".") && password.length >= 6) {
     alert("Перенаправлення на іншу сторінку");
 } else {
     alert("Помилка: неправильне заповнення");
