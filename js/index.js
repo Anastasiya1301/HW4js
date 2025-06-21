@@ -53,7 +53,7 @@ let number = prompt("Введіть свій номер телефону");
 let email = prompt("Введіть свою електронну адресу");
 let password = prompt("Введіть свій пароль");
 
-if (number.length >= 3 && email.includes("@") && emaill.indexOf(".") && password.length >= 6) {
+if (number.length >= 3 && email.includes("@.") && password.length >= 6) {
     alert("Перенаправлення на іншу сторінку");
 } else {
     alert("Помилка: неправильне заповнення");
